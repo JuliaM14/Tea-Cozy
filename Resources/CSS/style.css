@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  opacity: .9;
 }
 body {
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: .9;
   text-align: center;
 }
 header {
@@ -20,6 +20,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 .logo img{
   height: 50px;
@@ -30,22 +31,36 @@ nav a {
   text-decoration: underline;
   margin-right: 20px;
 }
+.pagecontainer {
+  padding-top:70px;
+  min-width: 1200px;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .mission {
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   height: 700px;
   width: 1200px;
   background-image: url(../Images/img-mission-background.jpg);
-  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-bottom: 50px;
 }
-.titlebanner {
+.missionbanner {
   background-color: black;
   width: 100%;
   height: 100px;
+}
+.mission h4 {
+  margin-top: 25px;
 }
 .featured {
   width: 1000px;
@@ -62,6 +77,41 @@ nav a {
   height: 200px;
   width: 300px;
 }
+.locationscontainer {
+  background-image: url(../Images/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+}
 .locations {
-  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-around;
+  height: 500px;
+  width: 1200px;
+  max-width: 1200px;
+  background-size: cover;
+  background-position: center;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 15px;
+}
+.contact {
+  display: flex;
+  height: 200px;
+  justify-content: space-around;
+  flex-direction: column;
 }
