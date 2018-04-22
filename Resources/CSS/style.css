@@ -22,7 +22,7 @@ header {
   align-items: center;
   z-index: 1;
 }
-.logo img{
+.logo img {
   height: 50px;
   margin-left: 10px;
 }
@@ -66,16 +66,26 @@ nav a {
   width: 1000px;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.title {
+  margin: 10px;
 }
 .teas {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 .teapics {
   height: 200px;
   width: 300px;
+}
+.teas h3 {
+  padding: 10px;
 }
 .locationscontainer {
   background-image: url(../Images/img-locations-background.jpg);
@@ -84,6 +94,8 @@ nav a {
   justify-content: center;
   align-items: center;
   opacity: 1 !important;
+  width: 1200px;
+  margin: 70px;
 }
 .locations {
   display: flex;
@@ -94,8 +106,6 @@ nav a {
   height: 500px;
   width: 1200px;
   max-width: 1200px;
-  background-size: cover;
-  background-position: center;
 }
 .address {
   display: flex;
@@ -114,4 +124,7 @@ nav a {
   height: 200px;
   justify-content: space-around;
   flex-direction: column;
+}
+.copyright {
+  text-align: left;
 }
